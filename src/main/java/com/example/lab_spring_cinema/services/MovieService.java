@@ -35,8 +35,6 @@ public class MovieService {
 
 
 // GETTERS and SETTERS
-
-
     public Movie getMovie() {
         return movie;
     }

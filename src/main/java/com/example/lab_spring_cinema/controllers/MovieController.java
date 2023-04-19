@@ -28,9 +28,9 @@ public class MovieController {
     }
 
     @PostMapping
-    public ResponseEntity<List<Movie>> postMovie(@RequestBody Movie movie){ //adding to movies
-        movieService.saveMovie(movie); //saving movie
-        return new ResponseEntity<>(movieService.getAllMovies(), HttpStatus.CREATED); // allow returning more than one item
+    public ResponseEntity<List<Movie>> postMovie(@RequestBody Movie movie){
+        movieService.saveMovie(movie);
+        return new ResponseEntity<>(movieService.getAllMovies(), HttpStatus.CREATED);
     }
 
 
