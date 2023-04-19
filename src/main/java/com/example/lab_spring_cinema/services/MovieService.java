@@ -24,12 +24,13 @@ public class MovieService {
     }
 
 
-
-    public void saveMovie(Movie movie) {
+    public Movie saveMovie(Movie movie) {
         movieRepository.save(movie);
+        return movie;
+
     }
 
-    public Optional<Movie> getMovieById(int id) {
+    public Optional<Movie> getMovieById(long id) {
         return movieRepository.findById(id);
     }
 
